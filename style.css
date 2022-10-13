@@ -8,7 +8,7 @@
 .tela{
     background-color: #E5E5E5;
     width: 414px;
-    height: 1070px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
 }
@@ -59,10 +59,10 @@ h2{
 
 }
 .opcaoPratos{
-    height:216px;
+    height: 240px;
     margin-top: 10px;
     display: flex;
-    
+    overflow-x: scroll;
 }
 .pratoPrincipal{
     background-color: #FFFFFF;
@@ -101,11 +101,12 @@ h2{
 }
 
 .bebidas{
-    margin-top: 27px;
     margin-left: 19px;
+    margin-top: 54px;
 }
 .sobremesas{
     margin-top: 27px;
+    margin-left: 19px;
 }
 
 .fechamento-pedido{
