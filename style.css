@@ -8,7 +8,7 @@
 .tela{
     background-color: #E5E5E5;
     width: 414px;
-    height: 1100px;
+    height: 1130px;
     display: flex;
     flex-direction: column;
 }
@@ -91,6 +91,11 @@ h2{
     line-height: 18px;
     margin-top: 4px;
     color: #A6A6A6;
+}
+.imgweb{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
 }
 .preço{
     margin-top: 5px;
