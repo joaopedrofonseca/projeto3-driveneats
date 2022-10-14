@@ -24,49 +24,66 @@
     <div class="pratos">
         <h2>Primeiro, seu prato</h2>
         <div class="opcaoPratos">
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkFrango()">
                 <img src="./frango_yin_yang 1.png">
                 <h1>Frango Yin Yang</h1>
                 <p>Um pouco de batata, um pouco de salada</p>
                 <h1 class="preço">R$ 22,90</h1>
+                <div class="frango caixaverde hide">
+                       <ion-icon name="checkmark-circle"></ion-icon></div>
             </div>
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkBurguer()">
                 <img class="imgweb" src="./hamburguer-angus-fatias-redondas-bacon-mobile.png">
                 <h1>Burgão de playboy</h1>
                 <p>Pão, carne, queijo e cebola caramelizada</p>
                 <h1 class="preço">R$ 45,90</h1>
+                <div class="burguer caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkPizza()">
                 <img class= "imgweb"src="./receitas-de-pizza-de-pepperoni-0.png">
                 <h1>Pizza peperoni</h1>
                 <p>Massa crocante e peperoni fresquinho</p>
                 <h1 class="preço">R$ 79,90</h1>
-            </div>
+                <div class="pizza caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
 
+            </div>
+            
 
         </div>
     </div>
     <div class="bebidas">
         <h2>Agora, sua bebida</h2>
         <div class="opcaoPratos">
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkCoca()">
                 <img src="./coquinha_gelada 1.png">
                 <h1>Coquinha gelada
                 </h1>
                 <p>Lata 350ml</p>
                 <h1 class="preço">R$ 4,90</h1>
+                <div class="coca caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkAgua()">
                 <img class="imgweb"src="./agua.png">
                 <h1>Água</h1>
                 <p>Garrafa 500ml</p>
                 <h1 class="preço">R$ 2,90</h1>
+                <div class="agua caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
-            <div class="pratoPrincipal">
-                <img class="imgweb"src="./heineken.png.crdownload">
+            <div class="pratoPrincipal" onclick="checkCerva()">
+                <img class="imgweb"src="./heinneken.png">
                 <h1>Cerveja Heineken</h1>
                 <p>Longneck 600ml</p>
                 <h1 class="preço">R$ 11,90</h1>
+                <div class="cerva caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
 
 
@@ -76,26 +93,35 @@
     <div class="sobremesas">
         <h2>Por fim, sua sobremesa</h2>
         <div class="opcaoPratos">
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkPudim()">
                 <img src="./pudim 1.png">
                 <h1>Pudim
                 </h1>
                 <p>Apenas pudim, mas um delicioso pudim</p>
                 <h1 class="preço">R$ 7,90</h1>
+                <div class="pudim caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkPG()">
                 <img class="imgweb"src="./petit-gateau.png">
                 <h1>Petit Gateau
                 </h1>
                 <p>Receita de Erick Jacquin</p>
                 <h1 class="preço">R$ 39,90</h1>
+                <div class="petit-gateau caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
-            <div class="pratoPrincipal">
+            <div class="pratoPrincipal" onclick="checkBrownie()">
                 <img class="imgweb"src="./brownie.png">
                 <h1>Brownie
                 </h1>
                 <p>Crocante por fora, macio por dentro</p>
                 <h1 class="preço">R$ 15,90</h1>
+                <div class="brownie caixaverde hide">
+                    <ion-icon name="checkmark-circle"></ion-icon></div>
+
             </div>
         </div>
         
@@ -104,6 +130,7 @@
     </div>
 
     
-    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
