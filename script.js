@@ -1,11 +1,16 @@
-var numPedido = Number(0);
 let prato_principal;
 let bebidas1;
 let sobremesa1;
+
 let valorPratoPrincipal;
 let valorBebida;
 let valorSobremesas;
 let valorTotal;
+
+let pratoprincipalConfirma = false;
+let bebidaconfirma = false;
+let sobremesaconfirma = false;
+
 function checkFrango(){
     const checkVerde = document.querySelector(".frango");
     checkVerde.classList.remove("hide");
@@ -13,9 +18,13 @@ function checkFrango(){
     desmarcado1.classList.add("hide");
     const desmarcado2 = document.querySelector(".pizza");
     desmarcado2.classList.add("hide");
+    pratoprincipalConfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
     prato_principal = "Frango Yin Yang";
     valorPratoPrincipal = Number(22.90);
-    numPedido++;
 }
 function checkBurguer(){
     const checkVerde = document.querySelector(".burguer");
@@ -24,9 +33,13 @@ function checkBurguer(){
     desmarcado1.classList.add("hide");
     const desmarcado2 = document.querySelector(".pizza");
     desmarcado2.classList.add("hide");
+    pratoprincipalConfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
     prato_principal = "Burgão de Playboy";
     valorPratoPrincipal = Number(45.9);
-    numPedido++;
 }
 function checkPizza(){
     const checkVerde = document.querySelector(".pizza");
@@ -35,9 +48,13 @@ function checkPizza(){
     desmarcado1.classList.add("hide");
     const desmarcado2 = document.querySelector(".burguer");
     desmarcado2.classList.add("hide");
+    pratoprincipalConfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
     prato_principal = "Pizza peperoni";
     valorPratoPrincipal = Number(79.90);
-    numPedido++;
 }
 function checkCoca(){
     const checkVerde = document.querySelector(".coca");
@@ -47,8 +64,13 @@ function checkCoca(){
     const desmarcado2 = document.querySelector(".cerva");
     desmarcado2.classList.add("hide");
     bebidas1 ="Coquinha Geladinha";
+    valorBebida = Number(4.90);
+    bebidaconfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
 
-    numPedido++;
 }
 function checkAgua(){
     const checkVerde = document.querySelector(".agua");
@@ -59,7 +81,12 @@ function checkAgua(){
     desmarcado2.classList.add("hide");
     bebidas1 = "Água";
     valorBebida = Number(2.90);
-    numPedido++;
+    bebidaconfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
+
 }
 function checkCerva(){
     const checkVerde = document.querySelector(".cerva");
@@ -70,7 +97,12 @@ function checkCerva(){
     desmarcado2.classList.add("hide");
     bebidas1 = "Cerveja Heineken";
     valorBebida = Number(11.90);
-    numPedido++;
+    bebidaconfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
+
 }
 function checkPudim(){
     const checkVerde = document.querySelector(".pudim");
@@ -81,7 +113,12 @@ function checkPudim(){
     desmarcado2.classList.add("hide");
     sobremesa1 = "Pudim";
     valorSobremesas = Number(7.90);
-    numPedido++;
+    sobremesaconfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
+
 
 }
 function checkPG(){
@@ -93,7 +130,11 @@ function checkPG(){
     desmarcado2.classList.add("hide");
     sobremesa1 = "Petit-Gateau";
     valorSobremesas = Number(39.90);
-    numPedido++;
+    sobremesaconfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
+    }
 
 }
 function checkBrownie(){
@@ -105,18 +146,10 @@ function checkBrownie(){
     desmarcado2.classList.add("hide");
     sobremesa1 = "Brownie";
     valorSobremesas = Number(15.90);
-    numPedido++;
-}
-function fecharPedido (){
-    if(numPedido>2){
-        const excluirbotaocinza = document.querySelector(".botaoInativo");
-        excluirbotaocinza.classList.add("hide");
-        const addbotaoverde = document.querySelector(".botaoAtivo");
-        addbotaoverde.classList.remove("hide");
-        valorTotal = Number(valorPratoPrincipal+valorBebida+valorSobremesas);
-        alert(valorTotal);
-        alert(prato_principal+bebidas1+sobremesa1);
-
+    sobremesaconfirma = true;
+    if(pratoprincipalConfirma === true && bebidaconfirma === true && sobremesaconfirma === true){
+        const elemento = document.querySelector(".botaoAtivo");
+        elemento.classList.remove("hide");
     }
 }
 
