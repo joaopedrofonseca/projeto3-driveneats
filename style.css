@@ -145,11 +145,22 @@ img{
     background-color: #FFFFFF;
     z-index: 5;
 }
-.fechamento-pedido button{
-    cursor: pointer;
+.botaoInativo{
     width: 364px;
     height: 61px;
     background-color: #CBCBCB;
+    border-radius: 50px;
+    border: none;
+    
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.botaoAtivo{
+    cursor: pointer;
+    width: 364px;
+    height: 61px;
+    background-color: #32B72F;
     border-radius: 50px;
     border: none;
     
