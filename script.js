@@ -152,4 +152,20 @@ function checkBrownie(){
         elemento.classList.remove("hide");
     }
 }
+function pedido(){
+    valorTotal = valorPratoPrincipal+valorBebida+valorSobremesas;
+    let total = valorTotal.toFixed(2);
 
+    let nome = prompt("Digite seu nome: ");
+    let endereço = prompt('Agora digite seu endereço: ');
+    let mensagem = `Olá, gostaria de fazer o pedido:
+    - Prato: ${prato_principal}
+    - Bebida: ${bebidas1}
+    - Sobremesa: ${sobremesa1}
+    Total: R$ ${total}
+
+    Nome: ${nome}
+    Endereço: ${endereço}`;
+    
+    window.location='http://wa.me/5564981163093?text='+mensagem;
+}
